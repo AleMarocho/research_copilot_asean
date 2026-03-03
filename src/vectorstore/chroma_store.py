@@ -1,10 +1,15 @@
+import os
 import chromadb
 from chromadb.config import Settings
 
 class ChromaVectorStore:
-    def __init__(self, persist_directory: str = "./chroma_db"):
+    def __init__(self, persist_directory: str = "chroma_db"):
+        # Make the path absolute so it works reliably in cloud envs (like Streamlit Cloud)
+        base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        full_path = os.path.join(base_dir, persist_directory)
+        
         self.client = chromadb.PersistentClient(
-            path=persist_directory,
+            path=full_path,
             settings=Settings(anonymized_telemetry=False)
         )
         self.collection = None

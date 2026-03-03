@@ -35,12 +35,22 @@ st.markdown("""
 if "messages" not in st.session_state:
     st.session_state.messages = []
 if "rag_pipeline" not in st.session_state:
-    st.session_state.rag_pipeline = RAGPipeline()
+    pipeline = RAGPipeline()
+    try:
+        if pipeline.vector_store.collection.count() == 0:
+            st.warning("Indexando biblioteca PDF por primera vez (esto puede tardar unos minutos)...")
+            pipeline.process_and_index_documents("papers/paper_catalog.json", "papers/")
+            st.success("¡Indexación completada!")
+    except Exception as e:
+        pass
+    st.session_state.rag_pipeline = pipeline
+
 if "generator" not in st.session_state:
     st.session_state.generator = Generator()
+
+import json
 if "catalog_papers" not in st.session_state: # Simulated for simplified UI, read from utils
     try:
-        import json
         with open("papers/paper_catalog.json","r") as f:
             st.session_state.catalog_papers = json.load(f)["papers"]
     except:
