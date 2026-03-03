@@ -1,7 +1,4 @@
-# 🤖 Research Copilot: Asistente Académico para ASEAN y RCEP
-
-*Un avanzado sistema de RAG (Retrieval-Augmented Generation) especializado en el estudio de la centralidad de ASEAN, el regionalismo y la Asociación Económica Integral Regional (RCEP).*
-
+# Research Copilot: Asistente Académico para ASEAN y RCEP
 ---
 
 ## 1. Título y Descripción del Proyecto
