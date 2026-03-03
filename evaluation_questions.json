@@ -1,0 +1,22 @@
+[
+  {"id": 1, "type": "factual", "question": "¿Qué es el RCEP y cuáles son sus objetivos principales?"},
+  {"id": 2, "type": "factual", "question": "¿En qué año se firmó el acuerdo RCEP según la literatura?"},
+  {"id": 3, "type": "factual", "question": "¿Qué países conforman la asociación ASEAN original?"},
+  {"id": 4, "type": "factual", "question": "¿Qué significa el concepto de 'Centralidad de la ASEAN'?"},
+  {"id": 5, "type": "factual", "question": "¿Qué es el TPP y cómo contrasta con el RCEP?"},
+  {"id": 6, "type": "factual", "question": "¿Qué rol jugó la crisis del COVID-19 en la economía del este asiático?"},
+  {"id": 7, "type": "factual", "question": "¿Qué significa 'regionalismo inclusivo' en el contexto asiático?"},
+  {"id": 8, "type": "factual", "question": "¿Cuáles son las preocupaciones defensivas que motivan a los gobiernos a unirse a mega-acuerdos?"},
+  {"id": 9, "type": "analytical", "question": "¿Cómo impacta la asertividad diplomática de China en la narrativa del regionalismo este-asiático?"},
+  {"id": 10, "type": "analytical", "question": "¿De qué manera el RCEP funciona como herramienta de 'hedging' para los países de ASEAN?"},
+  {"id": 11, "type": "analytical", "question": "¿Qué ventajas y desventajas tiene el RCEP comparado con acuerdos como el CPTPP?"},
+  {"id": 12, "type": "analytical", "question": "¿Cuál ha sido el impacto del RCEP en la desviación y creación de comercio (trade diversion/creation)?"},
+  {"id": 13, "type": "analytical", "question": "¿Cómo utilizan los 'poderes intermedios' (middle powers) las instituciones para equilibrar a EE. UU. y China?"},
+  {"id": 14, "type": "synthesis", "question": "¿Sobrevivirá ASEAN a la rivalidad hegemónica en el Indo-Pacífico? Sintetiza las posturas de los autores."},
+  {"id": 15, "type": "synthesis", "question": "Explica la evolución desde el regionalismo abierto de APEC hasta los mega-regionales actuales."},
+  {"id": 16, "type": "synthesis", "question": "Analiza cómo el RCEP afecta la identidad y diplomacia de la ASEAN a nivel global."},
+  {"id": 17, "type": "edge_case", "question": "¿Cuál es la fórmula cuántica detrás de los microprocesadores modernos?"},
+  {"id": 18, "type": "edge_case", "question": "¿Qué opina la literatura indexada sobre las elecciones políticas de Europa del Norte?"},
+  {"id": 19, "type": "edge_case", "question": "¿Cuáles son las tasas arancelarias exactas para importación de madera entre China y Brasil el día de hoy?"},
+  {"id": 20, "type": "edge_case", "question": "¿Quién ganará el partido de la Champions League basado en RCEP?"}
+]
