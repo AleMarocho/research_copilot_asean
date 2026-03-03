@@ -3,7 +3,7 @@
 
 ## 1. Título y Descripción del Proyecto
 **Research Copilot (Edición ASEAN y RCEP)**  
-Este proyecto implementa una tubería (pipeline) completa de RAG que funciona como un asistente académico inteligente. Está cargado con un corpus seleccionado de 20 artículos académicos sobre economía política del sudeste asiático, centrándose específicamente en la Asociación de Naciones del Sudeste Asiático (ASEAN) y el megatrámite de Libre Comercio (RCEP). Permite a los usuarios realizar consultas profundas y recibir respuestas precisas e informadas, incluyendo citas directas en formato APA.
+Este proyecto implementa una tubería (pipeline) completa de RAG que funciona como un asistente académico inteligente. Está cargado con un corpus seleccionado de 20 artículos académicos sobre que son empleados dentro de la revisión de literatura y como fuentes de mi proyecto de tesis "Más allá del comercio: la centralidad ASEAN en las dinámicas de regionalismo en el Este asiático durante el proceso de negociaciones del RCEP (2012-2022)" para la obtención de la Licenciatura en Relaciones Internacionales. Esta incluye papers enfocados en el desarrollo del regionalismo por parte de la Asociación de Naciones del Sudeste Asiático (ASEAN) dentro de la región del Este Asiático. De igual manera, incluye artículos académicos enfocados Asociación Económica Integral Regional (RCEP), uno de los tratados de Libre Comercio de mayor envergadura en la actualidad. Permite a los usuarios realizar consultas profundas y recibir respuestas precisas e informadas, incluyendo citas directas en formato APA.
 
 ## 2. Características (Features)
 - **Pipeline Inteligente RAG**: Extrae el contexto directamente de archivos PDF y genera respuestas semánticamente acertadas.
@@ -73,6 +73,6 @@ Se desarrollaron bajo requerimiento 4 distintas técnicas de Prompt Engineering 
 4. *Mejora a Futuro*: Añadir una etapa de "Rerank" de validación superior empleando software intermedio (por ejemplo integrando Cohere) para mejorar el factor *Recall* cuando se pregunten tópicos combinados.
 
 ## 9. Información del Autor del Trabajo
-- **Nombre**: Alessandra Marocho
-- **Curso**: Ing. de Prompts (Prompt Engineering)
+- **Nombre**: Alessandra Marcela Marocho Pacheco
+- **Curso**: Prompt Engineering usando GPT4
 - **Fecha de Entrega**: Marzo de 2026
