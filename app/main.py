@@ -1,4 +1,10 @@
 import os
+import sys
+
+# Agregar la raíz del proyecto al path para que Python encuentre la carpeta "src" correctamente
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(project_root)
+
 import streamlit as st
 from src.retrieval.rag_pipeline import RAGPipeline
 from src.generation.generator import Generator
