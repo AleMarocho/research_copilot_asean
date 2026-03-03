@@ -1,10 +1,18 @@
 import os
+import streamlit as st
 from openai import OpenAI
 from prompts.system_prompts import SYSTEM_PROMPT_V1, SYSTEM_PROMPT_V2, SYSTEM_PROMPT_V3, SYSTEM_PROMPT_V4
 
 class Generator:
     def __init__(self, model="gpt-4o-mini"):
-        self.client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY", ""))
+        api_key = os.environ.get("OPENAI_API_KEY")
+        if not api_key:
+            try:
+                api_key = st.secrets.get("OPENAI_API_KEY")
+            except Exception:
+                pass
+                
+        self.client = OpenAI(api_key=api_key)
         self.model = model
 
     def generate_response(self, query: str, context: str, strategy: str = "Standard", history: list = None) -> str:

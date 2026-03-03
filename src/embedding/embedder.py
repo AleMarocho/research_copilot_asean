@@ -1,9 +1,17 @@
 import os
+import streamlit as st
 from openai import OpenAI
 
 class OpenAIEmbedder:
     def __init__(self, model: str = "text-embedding-3-small"):
-        self.client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY", ""))
+        api_key = os.environ.get("OPENAI_API_KEY")
+        if not api_key:
+            try:
+                api_key = st.secrets.get("OPENAI_API_KEY")
+            except Exception:
+                pass
+        
+        self.client = OpenAI(api_key=api_key)
         self.model = model
 
     def embed_texts(self, texts: list[str]) -> list[list[float]]:
