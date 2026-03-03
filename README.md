@@ -1,4 +1,4 @@
-# 🤖 Research Copilot: ASEAN Centrality & RCEP
+# Research Copilot: ASEAN Centrality & RCEP
 ### Tarea Calificada 1 - Prompt Engineering
 **Estudiante:** Alessandra Marcela Marocho Pacheco  
 **Proyecto de Tesis:** *Más allá del comercio: la centralidad ASEAN en las dinámicas de regionalismo en el Este asiático (2012-2022)*.
